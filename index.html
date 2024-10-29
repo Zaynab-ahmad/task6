@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Book Saw</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+  <link rel="stylesheet" href="./assets/style.css">
+</head>
+
+<body>
+  <main>
+    <nav
+      class="navbar navbar-expand-lg bg-white opacity-75 border-bottom border-dark-subtle px-2 position-sticky top-0 z-3">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"><img class="w-75 mx-0" src="./assets/logo.png" /></a>
+        <button class="navbar-toggler border-0 focus-none mw-25 fs-6" type="button" data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+          aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span> <span class="menu-text">MENU</span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active letter-spacing" aria-current="page" href="#">HOME</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link letter-spacing" href="#featured-books">FEATURED</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link letter-spacing" href="#popular-books">POPULAR</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="hero">
+      <div id="bookCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner container">
+          <div class="carousel-item active">
+            <div class="row d-flex justify-content-center">
+              <div
+                class="col-xs-12 col-md-4 order-2 order-md-1 d-flex flex-column justify-content-center align-items-center align-items-lg-start">
+                <h1 class="py-3 fs-1">Life Of The Wild</h1>
+                <p class="text-body-secondary text-center text-lg-start py-3">Lorem ipsum dolor sit amet consectetur
+                  adipisicing elit. Amet, modi.Lorem ipsum dolor sit amet,
+                  consectetur adipiscing elit. Sed eu feugiat amet, libero ipsum enim
+                  pharetra.</p>
+                <button class="btn btn-outline-secondary rounded-0 col-6">Read More <i
+                    class="bi bi-arrow-right"></i></button>
+              </div>
+              <div class="col-xs-12 col-md-5 order-1 order-md-2 d-flex justify-content-center align-items-center py-5">
+                <img src="./assets/main-banner1.jpg" class="d-block w-75" alt="Life Of The Wild Book">
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="row d-flex justify-content-center">
+              <div
+                class="col-xs-12 col-md-4 order-2 order-md-1 d-flex flex-column justify-content-center align-items-center align-items-lg-start">
+                <h1 class="py-3 fs-1">BIRDS GONNA BE HAPPY</h1>
+                <p class="text-body-secondary text-center text-lg-start py-3">Lorem ipsum dolor sit, amet consectetur
+                  adipisicing elit. Harum, quas.Lorem ipsum dolor sit amet,
+                  consectetur adipiscing elit. Sed eu feugiat amet, libero ipsum enim
+                  pharetra.</p>
+                <button class="btn btn-outline-secondary rounded-0 col-6">Read More <i
+                    class="bi bi-arrow-right"></i></button>
+              </div>
+              <div class="col-xs-12 col-md-5 order-1 order-md-2 d-flex justify-content-center align-items-center py-5">
+                <img src="./assets/main-banner2.jpg" class="d-block w-75" alt="birds gonna be happy">
+              </div>
+            </div>
+          </div>
+        </div>
+  
+        <!-- Carousel Controls -->
+        <button class="carousel-control-prev position-absolute start-0" type="button" data-bs-target="#bookCarousel"
+          data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next position-absolute end-0" type="button" data-bs-target="#bookCarousel"
+          data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+  
+  
+    <section class="trademark my-5 p-5 bg-light">
+      <div
+        class="container d-flex  d-flex flex-column row-gap-3 flex-md-row justify-content-center align-items-center p-5">
+        <img src="./assets/client-image1.png" alt="">
+        <img src="./assets/client-image2.png" alt="">
+        <img src="./assets/client-image3.png" alt="">
+        <img src="./assets/client-image4.png" alt="">
+        <img src="./assets/client-image5.png" alt="">
+      </div>
+  
+  
+    </section>
+    <section id="featured-books" class="featured-books container my-5 p-5 d-flex flex-column align-items-center">
+      <p class="d-block text-body-tertiary quality-items">SOME QUALITY ITEMS</p>
+      <h2 class="d-block title fs-2 py-2 ">Featured Books</h2>
+  
+      <div class="row border-bottom border-sm-top book-list  py-4">
+      </div>
+      <p class="align-self-end my-4 fw-bold">View All Product<i class="bi bi-arrow-right"></i></p>
+    </section>
+    <section class="best-selling bg-light d-flex justify-content-center align-items-center my-5 py-4">
+  
+    </section>
+    <section id="popular-books" class="popular-books container my-5 py-4 d-flex flex-column align-items-center">
+      <p class="d-block text-body-secondary quality-items">SOME QUALITY ITEMS</p>
+      <h2 class="d-block title">POPULAR BOOKS</h2>
+  
+      <ul class="col-12 nav nav-tabs border-0 py-5 border-sm-top justify-content-center fs-5 fw-bold" id="myTab" role="tablist">
+        <li class="nav-item" role="presentation">
+          <button class="nav-link active border-0 text-body-tertiary focus-none position-relative" id="all-genre-tab"
+            data-bs-toggle="tab" data-bs-target="#all-genre" type="button" role="tab" aria-controls="all-genre"
+            aria-selected="true">All Genre</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link border-0 text-body-tertiary focus-none position-relative" id="business-tab"
+            data-bs-toggle="tab" data-bs-target="#business" type="button" role="tab" aria-controls="business"
+            aria-selected="false">Business</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link border-0 text-body-tertiary focus-none position-relative" id="technology-tab"
+            data-bs-toggle="tab" data-bs-target="#technology" type="button" role="tab" aria-controls="technology"
+            aria-selected="false">Technology</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link border-0 text-body-tertiary focus-none position-relative" id="romantic-tab"
+            data-bs-toggle="tab" data-bs-target="#romantic" type="button" role="tab" aria-controls="romantic"
+            aria-selected="false">Romantic</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link border-0 text-body-tertiary focus-none position-relative" id="adventure-tab"
+            data-bs-toggle="tab" data-bs-target="#adventure" type="button" role="tab" aria-controls="adventure"
+            aria-selected="false">Adventure</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link border-0 text-body-tertiary focus-none position-relative" id="fictional-tab"
+            data-bs-toggle="tab" data-bs-target="#fictional" type="button" role="tab" aria-controls="fictional"
+            aria-selected="false">Fictional</button>
+        </li>
+      </ul>
+  
+      <div class="tab-content" id="myTabContent">
+        <div class="tab-pane fade show active" id="all-genre" role="tabpanel" aria-labelledby="all-genre-tab">
+          <div class="row">
+          </div>
+        </div>
+        <div class="tab-pane fade" id="business" role="tabpanel" aria-labelledby="business-tab">
+          <div class="row">
+          </div>
+        </div>
+        <div class="tab-pane fade" id="technology" role="tabpanel" aria-labelledby="technology-tab">
+          <div class="row">
+          </div>
+        </div>
+        <div class="tab-pane fade" id="romantic" role="tabpanel" aria-labelledby="romantic-tab">
+          <div class="row">
+          </div>
+        </div>
+        <div class="tab-pane fade" id="adventure" role="tabpanel" aria-labelledby="adventure-tab">
+          <div class="row">
+          </div>
+        </div>
+        <div class="tab-pane fade" id="fictional" role="tabpanel" aria-labelledby="fictional-tab">
+          <div class="row">
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="subscribe bg-light py-5">
+      <div class="container">
+        <div class="row d-flex align-items-start justify-content-md-center align-items-md-center m-md-5 p-4">
+          <div class="col-12 col-md-5 px-0 py-4 p-md-5">
+            <h2 class="fs-1 under-line position-relative">
+              Subscribe To Our Newsletter
+            </h2>
+          </div>
+  
+          <div class="col-12 col-md-5 border-bottom border-secondary px-0">
+            <p class="text-body-secondary py-4 py-md-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic
+              consequuntur
+              corporis explicabo?Lorem ipsum
+              dolor sit amet consectetur adipisicing elit. Hic consequuntur corporis explicabo?
+            </p>
+            <form class="d-flex align-items-center justify-content-between">
+              <input type="email" class="form-control bg-light border border-0 px-0 py-md-3 w-auto focus-none"
+                placeholder="Enter your email address here">
+              <button type="submit"
+                class="btn btn-light fw-bold border border-0 px-0 py-md-3 w-auto w-auto mt-2 mt-md-0">SEND <i
+                  class="bi bi-send-fill"></i></button>
+            </form>
+          </div>
+        </div>
+      </div>
+  
+    </section>
+    <section class="footer p-5 border-bottom border-dark-subtle">
+      <div class="container">
+        <div class="row d-flex justify-content-between ">
+          <div class=" col-12 col-md-4 d-flex flex-column align-items-center p-5">
+            <img src="./assets/logo.png" alt="" class=" pb-5 px-0">
+            <p class="text-body-secondary text-center">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Amet
+              magni
+              dolores sequi reiciendis repellendus culpa ullam eaque, vel adipisci quasi?</p>
+          </div>
+          <div class=" col-12 col-md-8">
+            <div class="row">
+              <div class="col-12 col-md-3 d-flex flex-column align-items-center p-md-5 px-0 text-center ">
+                <h3 class="fs-4 py-2 pb-md-5">About Us</h3>
+                <p>vision</p>
+                <p>article</p>
+                <p>careers</p>
+                <p>service terms</p>
+                <p>donate</p>
+              </div>
+              <div class="col-12 col-md-3 d-flex flex-column align-items-center p-md-5 px-0 text-center">
+                <h3 class="fs-4 py-2 pb-md-5">Discover</h3>
+                <p>Home</p>
+                <p>Books</p>
+                <p>Authors</p>
+                <p>Subjects</p>
+                <p>Advanced Search</p>
+              </div>
+              <div class="col-12 col-md-3 d-flex flex-column align-items-center p-md-5 px-0 text-center">
+                <h3 class="fs-4 py-2 pb-md-5">My Account</h3>
+                <p>Sign In</p>
+                <p>View Cart</p>
+                <p>My Wishlist</p>
+                <p>Track My order</p>
+  
+              </div>
+              <div class="col-12 col-md-3 d-flex flex-column align-items-center p-md-5 px-0 text-center">
+                <h3 class="fs-4 py-2 pb-md-5">Help</h3>
+                <p>Help Center</p>
+                <p>Rebort a problem</p>
+                <p>Suggest edits</p>
+                <p>Contact Us</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+    </section>
+  </main>
+  <footer>
+    <div class="container py-5">
+      <div class="row d-flex flex-column flex-md-row justify-content-md-between align-items-center">
+        <div class="col-12 col-md-6 text-center text-md-start mb-3 mb-md-0">
+          <p class="text-body-secondary">
+            © 2024 All Rights Reserved, By
+            <a class="text-body-tertiary text-decoration-none" href="#">ZayNab Ahmad</a>
+          </p>
+        </div>
+        <div class="col-12 col-md-6 d-flex justify-content-center justify-content-md-end">
+          <i class="bi bi-facebook m-2"></i>
+          <i class="bi bi-twitter m-2"></i>
+          <i class="bi bi-youtube m-2"></i>
+          <i class="bi bi-behance m-2"></i>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"></script>
+  <script src="./app.js"></script>
+
+</body>
+
+</html>
